@@ -1,25 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:Graymath.Views"
        Title="Graymath"
        x:Class="Graymath.AppShell">
 
-    <!-- Display a bottom tab bar containing two tabs -->
+    --><!-- Display a bottom tab bar containing two tabs --><!--
     <TabBar>
-        <ShellContent Title="Home" >
-            <Image Source="Home_Logo.png"
-                   HeightRequest="50" 
-                   WidthRequest="50"  />
+        <ShellContent Title="Home" Icon="Home_Logo.png">
 
             <ShellContent.ContentTemplate>
                 <DataTemplate>
-                    <local:LoginPage />
+                    <local:HomePage />
                 </DataTemplate>
             </ShellContent.ContentTemplate>
         </ShellContent>
-        <!-- Other ShellContent items go here -->
+        --><!-- Other ShellContent items go here --><!--
 
     </TabBar>
 
+</Shell>-->
+
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:Graymath.Views"
+       x:Class="Graymath.AppShell">
+    <TabBar>
+        <Tab Title="Home" 
+            Icon="cat.png">
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}" />
+        </Tab>
+        <Tab Title="login"
+            Icon="dog.png">
+            <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" />
+        </Tab>
+    </TabBar>
 </Shell>

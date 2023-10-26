@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Graymath.Views"
+       Title="Graymath"
+       x:Class="Graymath.AppShell">
+
+    <!-- Display a bottom tab bar containing two tabs -->
+    <TabBar>
+        <ShellContent Title="Home" >
+            <Image Source="Home_Logo.png"
+                   HeightRequest="50" 
+                   WidthRequest="50"  />
+
+            <ShellContent.ContentTemplate>
+                <DataTemplate>
+                    <local:LoginPage />
+                </DataTemplate>
+            </ShellContent.ContentTemplate>
+        </ShellContent>
+        <!-- Other ShellContent items go here -->
+
+    </TabBar>
+
+</Shell>

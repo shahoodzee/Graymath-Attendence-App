@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graymath.Views.LoginPage">
+
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+            <!-- Card-Like Display -->
+            <Frame BackgroundColor="#f2f2f2" Padding="20" CornerRadius="10" HasShadow="True">
+                <StackLayout>
+                    <!-- Email Label and Entry -->
+                    <Label Text="Email" FontSize="16" TextColor="#333" />
+                    <Entry Placeholder="Enter your email" Keyboard="Email" />
+
+                    <!-- Password Label and Entry -->
+                    <Label Text="Password" FontSize="16" TextColor="#333" />
+                    <Entry Placeholder="Enter your password" IsPassword="True" />
+
+                    <!-- Forgot Password Link -->
+                    <Label Text="Forgot Password?" FontSize="14" TextColor="#007AFF" HorizontalOptions="End" Margin="0,10,0,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnForgotPasswordTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <!-- Submit Button -->
+                    <Button Text="Submit" BackgroundColor="#007AFF" TextColor="White" Clicked="OnSubmitClicked" CornerRadius="5" Margin="0,20,0,0" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

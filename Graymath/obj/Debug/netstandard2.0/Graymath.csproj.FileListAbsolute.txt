@@ -16,3 +16,4 @@ C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\XamlC.s
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\ref\Graymath.dll
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ForgotPassword.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ControllersPage.xaml.g.cs

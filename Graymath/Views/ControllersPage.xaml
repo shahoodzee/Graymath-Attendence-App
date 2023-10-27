@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graymath.Views.ControllersPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Page Header -->
+            <StackLayout Orientation="Horizontal" Padding="10, 10, 10, 0">
+                <!-- Home Logo -->
+                <Image Source="HomePage_Logo.jpg"
+                       HeightRequest="200" 
+                       WidthRequest="200" 
+                       HorizontalOptions="Center" />
+
+                <!-- Notification Icon and Title -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="Notification_Logo.jpg"
+                       HeightRequest="50" 
+                       WidthRequest="50" 
+                       HorizontalOptions="Center"/>
+                    <!--<Label Text="Updates" TextColor="Black" FontSize="16" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />-->
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Card-Like Container for Page Body -->
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="400" Padding="10" Margin="30">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Button Text="CheckIn" Clicked="OnCheckInClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
+                    <Button Text="CheckOut" Clicked="OnCheckOutClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
+                    <Button Text="WFH" Clicked="OnWorkFromHomeClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
+                    <Button Text="Leave" Clicked="OnLeaveClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
+                    <Button Text="History" Clicked="OnHistoryClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

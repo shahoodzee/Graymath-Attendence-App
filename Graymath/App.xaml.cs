@@ -1,4 +1,5 @@
 ﻿using Graymath;
+using Graymath.Views;
 using Xamarin.Forms;
 
 namespace Graymath
@@ -9,7 +10,7 @@ namespace Graymath
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new AppShell();
+			MainPage = new ControllersPage();
 		}
 
 		protected override void OnStart()

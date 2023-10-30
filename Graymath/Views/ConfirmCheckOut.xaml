@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graymath.Views.ConfirmCheckOut">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" WidthRequest="300" HeightRequest="200">
+                <StackLayout>
+                    <Label Text="Confirm Check Out" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="10" />
+                    <!-- Add other content to the card as needed -->
+
+                    <Button Text="Check Out" Clicked="CheckOutButton_Clicked" BackgroundColor="#007AFF" TextColor="White" CornerRadius="5" Margin="10" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

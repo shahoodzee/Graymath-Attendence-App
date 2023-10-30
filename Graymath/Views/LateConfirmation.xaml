@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graymath.Views.LateConfirmation">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" WidthRequest="300" HeightRequest="300" HasShadow="True" Padding="20" Margin="30">
+                <StackLayout>
+                    <Label Text="Are you sure that you want to register your late arrival?" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="10" />
+                    <Button Text="Yes" Clicked="YesButton_Clicked" BackgroundColor="#007AFF" TextColor="White" CornerRadius="20" Margin="0,10,0,0" FontSize="Medium" WidthRequest="120" />
+                    <Button Text="No" Clicked="NoButton_Clicked" BackgroundColor="#FF0000" TextColor="White" CornerRadius="20" Margin="0,10,0,0" FontSize="Medium" WidthRequest="120" />
+                </StackLayout>
+            </Frame> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -22,8 +22,7 @@
                     <!--<Label Text="Updates" TextColor="Black" FontSize="16" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />-->
                 </StackLayout>
             </StackLayout>
-
-            <!-- Card-Like Container for Page Body -->
+                <!-- Card-Like Container for Page Body -->
             <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="400" Padding="10" Margin="30">
                 <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                     <Button Text="CheckIn" Clicked="OnCheckInClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>

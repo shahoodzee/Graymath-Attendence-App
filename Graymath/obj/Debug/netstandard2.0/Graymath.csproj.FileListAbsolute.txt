@@ -17,3 +17,6 @@ C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\ref\Gra
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ForgotPassword.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ControllersPage.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\WorkFromHome.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LeaveRequestPage.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\HistoryPage.xaml.g.cs

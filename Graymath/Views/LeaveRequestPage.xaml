@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graymath.Views.LeaveRequestPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Page Header -->
+            <StackLayout Orientation="Vertical" Padding="10, 10, 10, 0">
+                <!-- Logo centered -->
+                <Image Source="HomePage_Logo.jpg"
+                       HeightRequest="300" 
+                       WidthRequest="200" 
+                       HorizontalOptions="Center" />
+            </StackLayout>
+
+            <!-- Card-Like Container for Input Fields -->
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" Padding="20" Margin="20">
+                <StackLayout>
+                    <Label Text="Select Start Date  of your leave" />
+                    <DatePicker x:Name="StartDatePicker" />
+                    <Label Text="Select End Date  of your leave" />
+                    <DatePicker x:Name="EndDatePicker" />
+
+                    <Label Text="Select Leave Reason" />
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="MedicalEmergencyCheckBox" />
+                            <Label Text="Medical Emergency" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="FamilyEmergencyCheckBox" />
+                            <Label Text="Family Emergency" VerticalOptions="Center" />
+                        </StackLayout>
+                        <!-- Add more predefined reasons with checkboxes as needed -->
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox x:Name="OtherReasonCheckBox" />
+                            <Label Text="Other" VerticalOptions="Center" />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
+
+                    <Button Text="Submit" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

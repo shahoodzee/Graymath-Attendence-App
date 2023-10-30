@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graymath.Views.HistoryPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Page Header -->
+            <StackLayout Orientation="Vertical" Padding="10, 10, 10, 0">
+                <!-- Logo centered -->
+                <Image Source="HomePage_Logo.jpg"
+                       HeightRequest="300" 
+                       WidthRequest="300" 
+                       HorizontalOptions="Center" />
+            </StackLayout>
+
+            <!-- Buttons to Render Tables -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="Daily History" Clicked="OnDailyHistoryClicked" />
+                <Button Text="Leave History" Clicked="OnLeaveHistoryClicked" />
+            </StackLayout>
+
+            <!-- Table for Daily History -->
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">
+                <ListView x:Name="DailyHistoryTable" IsVisible="False">
+                    <ListView.Header>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Text="CheckIn" />
+                            <Label Grid.Row="0" Grid.Column="1" Text="CheckOut" />
+                            <Label Grid.Row="0" Grid.Column="2" Text="Date" />
+                            <Label Grid.Row="0" Grid.Column="3" Text="Hours" />
+                        </Grid>
+                    </ListView.Header>
+                </ListView>
+            </Frame>
+
+            <!-- Table for Leave History -->
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">
+                <ListView x:Name="LeaveHistoryTable" IsVisible="False">
+                    <ListView.Header>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Leave#" />
+                            <Label Grid.Row="0" Grid.Column="1" Text="Date" />
+                        </Grid>
+                    </ListView.Header>
+                </ListView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

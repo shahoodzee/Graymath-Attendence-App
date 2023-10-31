@@ -3,13 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Graymath.Views.ConfirmCheckIn">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" WidthRequest="300" HeightRequest="200">
-                <StackLayout>
-                    <Label Text="Confirm Check In" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="10" />
-                    <!-- Add other content to the card as needed -->
+        <StackLayout>
+            <!-- Page Header -->
+            <StackLayout Orientation="Vertical" Padding="10, 10, 10, 0">
+                <!-- Logo centered -->
+                <Image Source="HomePage_Logo.jpg"
+                       HeightRequest="300" 
+                       WidthRequest="300" 
+                       HorizontalOptions="Center" />
+            </StackLayout>
 
-                    <Button Text="Check In" Clicked="CheckInButton_Clicked" BackgroundColor="#007AFF" TextColor="White" CornerRadius="5" Margin="10" />
+            <!-- Card-Like Container for Input Fields -->
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">
+                <StackLayout>
+                    <Label Text="Check-In Time" />
+                    <TimePicker x:Name="CheckInPicker" />
+
+                    <Button Text="Check In" Clicked="CheckInButton_Clicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20" />
                 </StackLayout>
             </Frame>
         </StackLayout>

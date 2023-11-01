@@ -20,12 +20,14 @@ namespace Graymath.Views
 
         private async void CheckInButton_Clicked(object sender, EventArgs e)
         {
-            bool answer = await DisplayAlert("Confirmation", "Are you sure you want to check in?", "Yes", "No");
+
+            bool answer = await DisplayAlert("Confirmation", $"Are you sure you want to CheckIn ", "Yes", "No");
 
             if (answer)
             {
                 // User clicked "Yes," you can perform the check-in action here.
                 // Add your check-in logic.
+                await Navigation.PushAsync(new ControllersPage());
             }
             else
             {

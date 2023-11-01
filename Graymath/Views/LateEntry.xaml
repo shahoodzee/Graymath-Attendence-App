@@ -2,16 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Graymath.Views.LateEntry">
-
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
-            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" WidthRequest="300" HeightRequest="200">
+            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" WidthRequest="300" HeightRequest="180">
                 <StackLayout>
-                    <Label Text="Confirm that you are late" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="10" />
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10">
-                        <Label Text="Arrival Time: " VerticalOptions="Center" />
-                        <TimePicker x:Name="ArrivalTimePicker" Format="T" />
-                    </StackLayout>
+                    <!-- Title Section -->
+                    <Label Text="Confirm your Late Arrival" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="10" />
+
+                    <!-- Time Picker Section -->
+                    <TimePicker x:Name="ArrivalTimePicker" Format="T" />
+
+                    <!-- Confirm Button to navigate to LateConfirmation Page -->
+                    <Button Text="Confirm"
+                            FontSize="Large"
+                            BackgroundColor="#007AFF"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HorizontalOptions="CenterAndExpand"
+                            Margin="10"
+                            Clicked="ConfirmButton_Clicked"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

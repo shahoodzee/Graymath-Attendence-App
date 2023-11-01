@@ -20,3 +20,10 @@ C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\C
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\WorkFromHome.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LeaveRequestPage.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\HistoryPage.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ConfirmCheckIn.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ConfirmCheckOut.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\InvalidCredentials.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LateConfirmation.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LateEntry.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs

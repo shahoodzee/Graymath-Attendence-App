@@ -25,7 +25,7 @@
                     </Label>
 
                     <!-- Submit Button -->
-                    <Button Text="Submit" BackgroundColor="#007AFF" TextColor="White" Clicked="OnSubmitClicked" CornerRadius="5" Margin="0,20,0,0" />
+                    <Button Text="Submit" BackgroundColor="#007AFF" TextColor="White" Clicked="OnSubmitClicked" CornerRadius="10" Margin="0,20,0,0" HeightRequest="38"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

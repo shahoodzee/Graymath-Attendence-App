@@ -22,13 +22,13 @@ namespace Graymath.Views
 			// You can navigate to the forgot password page or show a password reset dialog here
 		}
 
-		private void OnSubmitClicked(object sender, EventArgs e)
+		private async void OnSubmitClicked(object sender, EventArgs e)
 		{
 			// Handle the "Submit" button clicked event
 			// You can perform login/authentication logic here
 
-			// For example, display an alert for demonstration purposes
-			DisplayAlert("Login", "Login button clicked!", "OK");
+			// After a successful login, navigate to the AppShell
+			await Navigation.PushAsync(new NavigationPage(new AppShell())); 
 		}
 	}
 }

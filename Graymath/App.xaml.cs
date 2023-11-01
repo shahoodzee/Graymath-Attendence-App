@@ -10,7 +10,7 @@ namespace Graymath
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new LoginPage());
+			MainPage = new NavigationPage(new ControllersPage());
 			//MainPage = new HistoryPage();
 			//MainPage = new WorkFromHome();
 			//MainPage = new LeaveRequestPage();

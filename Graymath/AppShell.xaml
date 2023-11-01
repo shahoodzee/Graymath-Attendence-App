@@ -8,9 +8,9 @@
     <TabBar>
         <ShellContent Title="Notes"
                       Icon="icon_feed.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
+                      ContentTemplate="{DataTemplate views:HomePage}" />
         <ShellContent Title="About"
                       Icon="icon_about.png"
-                      ContentTemplate="{DataTemplate views:ProfilePage}" />
+                      ContentTemplate="{DataTemplate views:HomePage}" />
     </TabBar>
 </Shell>

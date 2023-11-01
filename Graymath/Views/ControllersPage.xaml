@@ -1,29 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasNavigationBar="True"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Graymath.Views.ControllersPage">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <!-- Fill remaining vertical space -->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <!-- Automatically size to content -->
+                <ColumnDefinition Width="*"/>
+                <!-- Fill remaining horizontal space -->
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="GrayMath"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="White"/>
+
+            <Image Grid.Row="0"
+               Grid.Column="1"
+               Source="Bell"
+               VerticalOptions="Center"
+               HorizontalOptions="End"/>
+        </Grid>
+    </NavigationPage.TitleView>
+
+
 
     <ContentPage.Content>
         <StackLayout>
-            <!-- Page Header -->
-            <StackLayout Orientation="Horizontal" Padding="10, 10, 10, 0">
-                <!-- Home Logo -->
-                <Image Source="HomePage_Logo.jpg"
-                       HeightRequest="200" 
-                       WidthRequest="200" 
-                       HorizontalOptions="Center" />
-
-                <!-- Notification Icon and Title -->
-                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="Notification_Logo.jpg"
-                       HeightRequest="50" 
-                       WidthRequest="50" 
-                       HorizontalOptions="Center"/>
-                    <!--<Label Text="Updates" TextColor="Black" FontSize="16" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />-->
-                </StackLayout>
-            </StackLayout>
-                <!-- Card-Like Container for Page Body -->
             <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="400" Padding="10" Margin="30">
                 <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                     <Button Text="CheckIn" Clicked="OnCheckInClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>

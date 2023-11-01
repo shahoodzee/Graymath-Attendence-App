@@ -15,6 +15,7 @@ namespace Graymath.Views
 		public LoginPage()
 		{
 			InitializeComponent();
+
 		}
 		private void OnForgotPasswordTapped(object sender, EventArgs e)
 		{
@@ -28,7 +29,7 @@ namespace Graymath.Views
 			// You can perform login/authentication logic here
 
 			// After a successful login, navigate to the AppShell
-			await Navigation.PushAsync(new NavigationPage(new AppShell())); 
+			await Navigation.PushAsync(new NavigationPage(new ControllersPage())); 
 		}
 	}
 }

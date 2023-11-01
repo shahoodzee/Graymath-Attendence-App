@@ -27,6 +27,7 @@
                 <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                     <Button Text="CheckIn" Clicked="OnCheckInClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
                     <Button Text="CheckOut" Clicked="OnCheckOutClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
+                    <Button Text="Late" Clicked="OnLateClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
                     <Button Text="WFH" Clicked="OnWorkFromHomeClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
                     <Button Text="Leave" Clicked="OnLeaveClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
                     <Button Text="History" Clicked="OnHistoryClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace Graymath.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -18,17 +19,27 @@ namespace Graymath.Views
 
 			// Add event handlers for button clicks
 		}
-		private void OnCheckInClicked(object sender, EventArgs e)
+		private async void OnCheckInClicked(object sender, EventArgs e)
 		{
-			// Handle the CheckIn button click event
-		}
+            // Handle the CheckIn button click event
+            await Navigation.PushAsync(new ConfirmCheckIn());
+        }
 
-		private void OnCheckOutClicked(object sender, EventArgs e)
+		private async void OnCheckOutClicked(object sender, EventArgs e)
 		{
-			// Handle the CheckOut button click event
-		}
+            // Handle the CheckOut button click event
+            await Navigation.PushAsync(new NavigationPage(new ConfirmCheckOut()));
+        }
 
-		private void OnWorkFromHomeClicked(object sender, EventArgs e)
+        private async void OnLateClicked(object sender, EventArgs e)
+        {
+            // Handle the CheckOut button click event
+            await Navigation.PushAsync(new NavigationPage(new LateEntry()));
+        }
+
+
+
+        private void OnWorkFromHomeClicked(object sender, EventArgs e)
 		{
 			// Handle the WorkFromHome button click event
 		}

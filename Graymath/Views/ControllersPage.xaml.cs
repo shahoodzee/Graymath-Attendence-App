@@ -16,9 +16,16 @@ namespace Graymath.Views
 		public ControllersPage ()
 		{
 			InitializeComponent ();
+			// Hide the back button in the navigation bar
+			NavigationPage.SetHasBackButton(this, false);
+			NavigationPage.SetHasNavigationBar(this, true);
 
-			// Add event handlers for button clicks
 		}
+		private async void OnBellImageTapped(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new NotificationsPage());
+		}
+
 		private async void OnCheckInClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckIn button click event
@@ -35,7 +42,7 @@ namespace Graymath.Views
 			bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-out?", "Yes", "No");
 			if (result)
 			{
-				await Navigation.PushAsync(new NavigationPage(new ConfirmCheckOut()));
+				await Navigation.PushAsync(new ConfirmCheckOut());
 			}
 		}
 
@@ -45,7 +52,7 @@ namespace Graymath.Views
 			bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in Late?", "Yes", "No");
 			if (result)
 			{
-				await Navigation.PushAsync(new NavigationPage(new LateEntry()));
+				await Navigation.PushAsync(new LateEntry());
 			}
 		}
 
@@ -56,7 +63,7 @@ namespace Graymath.Views
 			bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in via WFH?", "Yes", "No");
 			if (result)
 			{
-				await Navigation.PushAsync(new NavigationPage(new WorkFromHome()));
+				await Navigation.PushAsync(new WorkFromHome());
 			}
 		}
 
@@ -66,7 +73,7 @@ namespace Graymath.Views
 			bool result = await DisplayAlert("Confirmation", "Are you sure ?", "Yes", "No");
 			if (result)
 			{
-				await Navigation.PushAsync(new NavigationPage(new LeaveRequestPage()));
+				await Navigation.PushAsync(new LeaveRequestPage());
 			}
 		}
 
@@ -76,7 +83,7 @@ namespace Graymath.Views
 			//bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in?", "Yes", "No");
 			//if (result)
 			{
-				await Navigation.PushAsync(new NavigationPage(new HistoryPage()));
+				await Navigation.PushAsync(new HistoryPage());
 			}
 		}
 

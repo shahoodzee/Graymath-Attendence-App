@@ -2,27 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Graymath.Views.LateEntry">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="GrayMath"
+               VerticalOptions="Start"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="White"/>
+        </Grid>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
-            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" WidthRequest="300" HeightRequest="180">
+            <StackLayout>
+                <!-- Title Section -->
+
+                <Label Text="Select Date of your Late Arrival" FontSize="18"/>
+                <DatePicker x:Name="DatePicker" />
+
+                <Label Text="Enter time of your Late Arrival" FontSize="18"/>
+                <!-- Time Picker Section -->
+                <TimePicker x:Name="ArrivalTimePicker"/>
+
+                <Label Text="Select Late Reason" FontSize="18"/>
                 <StackLayout>
-                    <!-- Title Section -->
-                    <Label Text="Confirm your Late Arrival" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="10" />
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="MedicalEmergencyCheckBox" />
+                        <Label Text="Medical Emergency" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="FamilyEmergencyCheckBox" />
+                        <Label Text="Family Emergency" VerticalOptions="Center" />
+                    </StackLayout>
+                    <!-- Add more predefined reasons with checkboxes as needed -->
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="OtherReasonCheckBox" />
+                        <Label Text="Other" VerticalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+                <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
 
-                    <!-- Time Picker Section -->
-                    <TimePicker x:Name="ArrivalTimePicker" Format="T" />
-
-                    <!-- Confirm Button to navigate to LateConfirmation Page -->
-                    <Button Text="Confirm"
-                            FontSize="Large"
-                            BackgroundColor="#007AFF"
-                            TextColor="White"
+                <!-- Confirm Button to navigate to LateConfirmation Page -->
+                <Button Text="Confirm"
                             CornerRadius="10"
                             HorizontalOptions="CenterAndExpand"
-                            Margin="10"
                             Clicked="ConfirmButton_Clicked"/>
-                </StackLayout>
-            </Frame>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

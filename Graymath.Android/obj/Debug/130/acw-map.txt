@@ -1,6 +1,9 @@
 Graymath.Droid.MainActivity, Graymath.Android;crc64232bfaa7a4307eda.MainActivity
 Graymath.Droid.MainActivity;crc64232bfaa7a4307eda.MainActivity
 graymath.droid.MainActivity;crc64232bfaa7a4307eda.MainActivity
+Graymath.Droid.SplashActivity, Graymath.Android;crc64232bfaa7a4307eda.SplashActivity
+Graymath.Droid.SplashActivity;crc64232bfaa7a4307eda.SplashActivity
+graymath.droid.SplashActivity;crc64232bfaa7a4307eda.SplashActivity
 AndroidX.Activity.IOnBackPressedDispatcherOwner, Xamarin.AndroidX.Activity;androidx.activity.OnBackPressedDispatcherOwner
 AndroidX.Activity.IOnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner
 androidx.activity.OnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner

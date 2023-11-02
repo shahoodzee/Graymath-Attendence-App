@@ -5,12 +5,12 @@
        x:Class="Graymath.AppShell">
     
      <!--Display a bottom tab bar containing two tabs--> 
-    <TabBar>
+    <!--<TabBar>
         <ShellContent Title="Notes"
                       Icon="icon_feed.png"
                       ContentTemplate="{DataTemplate views:HomePage}" />
         <ShellContent Title="About"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:HomePage}" />
-    </TabBar>
+    </TabBar>-->
 </Shell>

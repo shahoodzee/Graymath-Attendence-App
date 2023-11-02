@@ -48,10 +48,10 @@ public final class R {
 		public static final int notification_template_media_custom = 0x7f0b006b;
 	}
 	public static final class style {
-		public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f0f0185;
-		public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f0f0187;
-		public static final int TextAppearance_Compat_Notification_Media = 0x7f0f0188;
-		public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f0f018a;
-		public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f0f018c;
+		public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f0f0186;
+		public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f0f0188;
+		public static final int TextAppearance_Compat_Notification_Media = 0x7f0f0189;
+		public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f0f018b;
+		public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f0f018d;
 	}
 }

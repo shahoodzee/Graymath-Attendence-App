@@ -19,7 +19,7 @@
             <Label Grid.Row="0"
                Grid.Column="0"
                Text="GrayMath"
-               VerticalOptions="Center"
+               VerticalOptions="Start"
                FontAttributes="Bold"
                FontSize="20"
                TextColor="White"/>
@@ -28,24 +28,90 @@
                Grid.Column="1"
                Source="Bell"
                VerticalOptions="Center"
-               HorizontalOptions="End"/>
+               HorizontalOptions="End">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBellImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
         </Grid>
     </NavigationPage.TitleView>
 
 
 
     <ContentPage.Content>
-        <StackLayout>
-            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="400" Padding="10" Margin="30">
-                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Button Text="CheckIn" Clicked="OnCheckInClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
-                    <Button Text="CheckOut" Clicked="OnCheckOutClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
-                    <Button Text="Late" Clicked="OnLateClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
-                    <Button Text="WFH" Clicked="OnWorkFromHomeClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
-                    <Button Text="Leave" Clicked="OnLeaveClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
-                    <Button Text="History" Clicked="OnHistoryClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"/>
+        <!--<StackLayout>
+            --><!--<Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="400" Padding="10" Margin="30">--><!--
+                <StackLayout VerticalOptions="CenterAndExpand"              HorizontalOptions="CenterAndExpand">
+                    <Button Text="CheckIn"  Clicked="OnCheckInClicked"      HorizontalOptions="Center"  Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"  CornerRadius="10" />
+                    <Button Text="CheckOut" Clicked="OnCheckOutClicked"     HorizontalOptions="Center"  Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"  CornerRadius="10"/>
+                    <Button Text="Late"     Clicked="OnLateClicked"         HorizontalOptions="Center"  Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"  CornerRadius="10" />
+                    <Button Text="WFH"      Clicked="OnWorkFromHomeClicked" HorizontalOptions="Center"  Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"  CornerRadius="10"/>
+                    <Button Text="Leave"    Clicked="OnLeaveClicked"        HorizontalOptions="Center"  Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"  CornerRadius="10"/>
+                    <Button Text="History"  Clicked="OnHistoryClicked"      HorizontalOptions="Center"  Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke"  CornerRadius="10"/>
                 </StackLayout>
-            </Frame>
+        </StackLayout>-->
+
+        <StackLayout VerticalOptions="CenterAndExpand"              HorizontalOptions="CenterAndExpand">
+            <!-- Logo centered -->
+
+            <Image Source="CheckInCenter.png"
+                   HeightRequest="50"   
+                   Margin="0,0,0,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCheckInClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Source="CheckOutCenter.png"
+                   HeightRequest="50"   
+                   Margin="0,0,0,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCheckOutClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Source="LateCenter.png"
+                   HeightRequest="50"   
+                   Margin="0,0,0,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLateClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Source="leaveCenter.png"
+                   HeightRequest="50"   
+                   Margin="0,0,0,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLeaveClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Source="WFHCenter.png"
+                   HeightRequest="50"   
+                   Margin="0,0,0,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnWorkFromHomeClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Source="HistoryCenter.png"
+                   HeightRequest="50"   
+                   Margin="0,0,0,10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnHistoryClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+            <!--<Image Source="CheckOutCenter.png" HeightRequest="50"   Margin="0,0,0,10"/>
+            <Image Source="LateCenter.png"     HeightRequest="50"   Margin="0,0,0,10"/>
+            <Image Source="LeaveCenter.png"    HeightRequest="50"   Margin="0,0,0,10"/>
+            <Image Source="WFHCenter.png"      HeightRequest="50"   Margin="0,0,0,10"/>
+            <Image Source="HistoryCenter.png"  HeightRequest="50"   Margin="0,0,0,10"/>-->
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

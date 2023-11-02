@@ -10,4 +10,9 @@
     <item name="colorPrimaryDark">#1976D2</item>
      colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets 
-    <item name="colorAccent">#FF4081</item></style></resources>
+    <item name="colorAccent">#FF4081</item></style><!--here you will be able to customize your coloring scheme--><style name="MyTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar"><item name="android:windowBackground">@drawable/splash_screen</item><item name="android:windowNoTitle">true</item><item name="android:windowFullscreen">true</item><item name="android:windowContentOverlay">@null</item><item name="android:windowActionBar">true</item><item name="colorPrimary">#2196F3</item>
+		colorPrimaryDark is used for the status bar
+		<item name="colorPrimaryDark">#1976D2</item>
+		colorAccent is used as the default value for colorControlActivated
+		which is used to tint widgets
+		<item name="colorAccent">#FF4081</item></style></resources>

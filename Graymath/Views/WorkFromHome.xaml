@@ -3,30 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Graymath.Views.WorkFromHome">
 
-
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="GrayMath"
+               VerticalOptions="Start"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="White"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    
     <ContentPage.Content>
         <StackLayout>
-            <!-- Page Header -->
-            <StackLayout Orientation="Vertical" Padding="10, 10, 10, 0">
-                <!-- Logo centered -->
-                <Image Source="HomePage_Logo.jpg"
-                       HeightRequest="300" 
-                       WidthRequest="300" 
-                       HorizontalOptions="Center" />
-            </StackLayout>
-
             <!-- Card-Like Container for Input Fields -->
-            <Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">
+            <!--<Frame CornerRadius="10" BackgroundColor="#E5E5E5" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">-->
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="Check-In Time" FontSize="20"/>
+                <TimePicker x:Name="CheckInTimePicker"/>
+
+                <Label Text="Check-Out Time"  FontSize="20"/>
+                <TimePicker x:Name="CheckOutTimePicker" Margin="0,0,0,20"/>
+
+                <Label Text="Select Leave Reason" FontSize="20"/>
                 <StackLayout>
-                    <Label Text="Check-In Time" />
-                    <TimePicker x:Name="CheckInTimePicker" />
-
-                    <Label Text="Check-Out Time" />
-                    <TimePicker x:Name="CheckOutTimePicker" />
-
-                    <Button Text="Submit" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20" />
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="MedicalEmergencyCheckBox" />
+                        <Label Text="Medical Emergency" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="FamilyEmergencyCheckBox" />
+                        <Label Text="Family Emergency" VerticalOptions="Center" />
+                    </StackLayout>
+                    <!-- Add more predefined reasons with checkboxes as needed -->
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="OtherReasonCheckBox" />
+                        <Label Text="Other" VerticalOptions="Center" />
+                    </StackLayout>
                 </StackLayout>
-            </Frame>
+                <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
+                
+                <Button Text="Submit" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

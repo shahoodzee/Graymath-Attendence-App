@@ -10,18 +10,7 @@ namespace Graymath
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new ControllersPage());
-			//MainPage = new HistoryPage();
-			//MainPage = new WorkFromHome();
-			//MainPage = new LeaveRequestPage();
-			//MainPage = new LoginPage();
-			//MainPage = new ControllersPage();
-			//MainPage = new ConfirmCheckIn();
-			//MainPage = new LateConfirmation();
-			//MainPage = new InvalidCredentials();
-			//MainPage = new LateEntry();
-			//MainPage = new HomePage();
-
+			MainPage = new NavigationPage(new LoginPage());
 		}
 
 		protected override void OnStart()

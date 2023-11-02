@@ -2,7 +2,6 @@ C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Graymat
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Graymath.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Graymath.AssemblyInfoInputs.cache
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Graymath.AssemblyInfo.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Graymath.csproj.CoreCompileInputs.cache
@@ -25,3 +24,4 @@ C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\C
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\InvalidCredentials.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LateConfirmation.xaml.g.cs
 C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\LateEntry.xaml.g.cs
+C:\Users\shahood\source\repos\Graymath\Graymath\obj\Debug\netstandard2.0\Views\NotificationsPage.xaml.g.cs

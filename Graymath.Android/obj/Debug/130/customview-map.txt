@@ -12,7 +12,9 @@ androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\shahood\source\repo
 attr;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\values\attrs.xml
 background;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
+bitmap;obj\Debug\130\res\drawable\splash_screen.xml
 cache-path;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\130\res\drawable\splash_screen.xml
 color;obj\Debug\130\res\values\colors.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\layout\flyoutcontent.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
@@ -28,7 +30,9 @@ foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
 item;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\values\styles.xml
+item;obj\Debug\130\res\drawable\splash_screen.xml
 item;obj\Debug\130\res\values\styles.xml
+layer-list;obj\Debug\130\res\drawable\splash_screen.xml
 LinearLayout;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\lp\54\jl\res\values\attrs.xml

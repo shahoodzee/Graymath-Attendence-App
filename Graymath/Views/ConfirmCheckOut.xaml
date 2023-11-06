@@ -17,9 +17,9 @@
         <!-- Card-Like Container for Input Fields -->
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
             <Label Text="Check-Out Time" FontSize="40" HorizontalOptions="CenterAndExpand"/>
-            <TimePicker x:Name="CheckOutTimePicker" />
+            <TimePicker x:Name="CheckOutTimePicker" Time="7:00"/>
 
-            <Button Text="Check Out" Clicked="CheckOutButton_Clicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20" />
+            <Button Text="Check Out" Clicked="CheckOutButton_Clicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

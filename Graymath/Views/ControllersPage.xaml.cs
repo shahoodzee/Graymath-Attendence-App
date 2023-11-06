@@ -60,8 +60,8 @@ namespace Graymath.Views
 		private async void OnWorkFromHomeClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckOut button click event
-			bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in via WFH?", "Yes", "No");
-			if (result)
+			//bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in via WFH?", "Yes", "No");
+			//if (result)
 			{
 				await Navigation.PushAsync(new WorkFromHome());
 			}
@@ -83,7 +83,7 @@ namespace Graymath.Views
 			//bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in?", "Yes", "No");
 			//if (result)
 			{
-				await Navigation.PushAsync(new HistoryPage());
+				await Navigation.PushAsync(new HistoryPage1());
 			}
 		}
 

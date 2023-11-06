@@ -24,7 +24,7 @@
 
                     <!-- Show Password Switch -->
                     <Label Text="Show Password" VerticalOptions="Center" Margin="10,0,0,0"  />
-                    <Switch x:Name="ShowPasswordSwitch" IsToggled="false" Toggled="OnShowPasswordToggled" />
+                    <Switch x:Name="ShowPasswordSwitch" IsToggled="false" Toggled="OnShowPasswordToggled" Margin="0,-30,0,0"/>
                     <!-- Error Labels -->
                     <Label x:Name="PasswordErrorLabel" Text="Password must be 8 characters with capital letters and special characters" TextColor="Black" IsVisible="False" />
 
@@ -36,7 +36,7 @@
                     </Label>
 
                     <!-- Submit Button -->
-                    <Button Text="Submit" BackgroundColor="#007AFF" TextColor="White" Clicked="OnSubmitClicked" CornerRadius="10" Margin="0,20,0,0" HeightRequest="38"/>
+                    <Button Text="Login" BackgroundColor="#007AFF" TextColor="White" Clicked="OnSubmitClicked" CornerRadius="10" Margin="0,20,0,0" HeightRequest="38"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

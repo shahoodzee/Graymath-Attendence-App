@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Graymath.Views.HistoryPage1">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="GrayMath"
+               VerticalOptions="Start"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="White"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <Grid>
+        <xct:TabView
+                TabStripPlacement="Bottom"
+                TabStripBackgroundColor="#2196F3"
+                TabStripHeight="60"
+                TabIndicatorColor="White"
+                TabContentBackgroundColor="White">
+
+            <xct:TabViewItem
+                    Text="Daily History"
+                    TextColor="White"
+                    TextColorSelected="White"
+                    FontAttributes="Bold"
+                    FontSize="15">
+                <Grid 
+                        BackgroundColor="White">
+                    <Label
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                    <!-- Table for Daily History -->
+                        <ListView x:Name="DailyHistoryTable" IsVisible="False">
+                            <ListView.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0" Text="CheckIn" />
+                                    <Label Grid.Row="0" Grid.Column="1" Text="CheckOut" />
+                                    <Label Grid.Row="0" Grid.Column="2" Text="Date" />
+                                    <Label Grid.Row="0" Grid.Column="3" Text="Hours" />
+                                </Grid>
+                            </ListView.Header>
+                        </ListView>
+                </Grid>
+            </xct:TabViewItem>
+
+            <xct:TabViewItem
+                    Text="Leave History"
+                    TextColor="White"
+                    TextColorSelected="White"
+                    FontAttributes="Bold"
+                    FontSize="15">
+                <Grid>
+                    <Label    
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                    <!-- Table for Leave History -->
+                    <Frame CornerRadius="10" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">
+                        <ListView x:Name="LeaveHistoryTable" IsVisible="False">
+                            <ListView.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0" Text="Leave#" />
+                                    <Label Grid.Row="0" Grid.Column="1" Text="Date" />
+                                </Grid>
+                            </ListView.Header>
+                        </ListView>
+                    </Frame>
+                </Grid>
+            </xct:TabViewItem>
+        </xct:TabView>
+    </Grid>
+</ContentPage>

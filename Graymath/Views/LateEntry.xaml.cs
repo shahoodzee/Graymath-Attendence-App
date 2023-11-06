@@ -42,7 +42,11 @@ namespace Graymath.Views
 			}
 			else
 			{
-	            await Navigation.PushAsync(new LateConfirmation());
+				bool result = await DisplayAlert("Confirmation", "Are you sure?", "Yes", "No");
+				if (result)
+				{
+					await Navigation.PushAsync(new ControllersPage());
+				}
 			}
         }
     }

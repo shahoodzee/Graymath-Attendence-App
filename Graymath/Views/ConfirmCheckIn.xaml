@@ -19,9 +19,9 @@
                 <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                     <Label Text="Check-In Time"
                            FontSize="40"/>
-                    <TimePicker x:Name="CheckInPicker" />
+                    <TimePicker x:Name="CheckInPicker" Time="09:00"/>
 
-                    <Button Text="Check In" Clicked="CheckInButton_Clicked" HorizontalOptions="Center" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20" />
+                    <Button Text="Check In" Clicked="CheckInButton_Clicked" HorizontalOptions="Center" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
                 </StackLayout>
         </StackLayout>
     </ContentPage.Content>

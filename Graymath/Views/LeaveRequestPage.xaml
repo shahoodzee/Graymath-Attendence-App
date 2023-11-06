@@ -17,10 +17,26 @@
         <StackLayout>
             <!-- Card-Like Container for Input Fields -->
             <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                <Label Text="Select Start Date  of your leave" FontSize="18"/>
-                <DatePicker x:Name="StartDatePicker" />
-                <Label Text="Select End Date  of your leave" FontSize="18"/>
-                <DatePicker x:Name="EndDatePicker" />
+                <Label Text="Select Start Date" FontSize="18"/>
+                <DatePicker x:Name="StartDatePicker" Margin="0,-10,0,0"/>
+                <Label Text="Select End Date" FontSize="18"/>
+                <DatePicker x:Name="EndDatePicker" Margin="0,-10,0,0"/>
+
+                <Label Text="Select Leave Type" FontSize="18"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="CasualTypeCheckBox" Margin="0,0,0,0"/>
+                        <Label Text="Casual" VerticalOptions="Center" Margin="0,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
+                        <CheckBox x:Name="AnnualTypeCheckBox" />
+                        <Label Text="Annual" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
+                        <CheckBox x:Name="SickTypeCheckBox" />
+                        <Label Text="Sick" VerticalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
 
                 <Label Text="Select Leave Reason" FontSize="18"/>
                 <StackLayout>
@@ -28,18 +44,22 @@
                         <CheckBox x:Name="MedicalEmergencyCheckBox" />
                         <Label Text="Medical Emergency" VerticalOptions="Center" />
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
                         <CheckBox x:Name="FamilyEmergencyCheckBox" />
                         <Label Text="Family Emergency" VerticalOptions="Center" />
                     </StackLayout>
                     <!-- Add more predefined reasons with checkboxes as needed -->
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
                         <CheckBox x:Name="OtherReasonCheckBox" />
                         <Label Text="Other" VerticalOptions="Center" />
                     </StackLayout>
                 </StackLayout>
-                <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
-
+                <Editor x:Name="OtherReasonEditor"
+                        Placeholder="Explain your reason..."
+                        IsTextPredictionEnabled="False"
+                        IsSpellCheckEnabled="False"
+                        HeightRequest="50"
+                        IsVisible="False" />
                 <Button Text="Apply" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" />
             </StackLayout>
         </StackLayout>

@@ -13,6 +13,8 @@
                TextColor="White"/>
         </Grid>
     </NavigationPage.TitleView>
+
+    <!--Display a bottom tab bar containing two tabs-->
     <ContentPage.Content>
         <StackLayout>
 
@@ -67,3 +69,5 @@
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+

@@ -25,16 +25,25 @@ namespace Graymath.Views
 		private async void OnSubmitClicked(object sender, EventArgs e)
 		{
 			// Check how many checkboxes are selected
-			int selectedCount = 0;
+			int reasonCount  = 0 , leaveType = 0;
 
 			if (MedicalEmergencyCheckBox.IsChecked)
-				selectedCount++;
+				reasonCount++;
 
 			if (FamilyEmergencyCheckBox.IsChecked)
-				selectedCount++;
+				reasonCount++;
 
 			if (OtherReasonCheckBox.IsChecked)
-				selectedCount++;
+				reasonCount++;
+
+			if (CasualTypeCheckBox.IsChecked)
+				leaveType++;
+
+			if (AnnualTypeCheckBox.IsChecked)
+				leaveType++;
+			
+			if (SickTypeCheckBox.IsChecked)
+				leaveType++;
 
 			DateTime startDate = StartDatePicker.Date;
 			DateTime endDate = EndDatePicker.Date;
@@ -43,27 +52,35 @@ namespace Graymath.Views
 			TimeSpan timeSpan = endDate - startDate;
 
 			// Check if the time span is less than 1 day (24 hours)
+			//if (timeSpan.TotalHours < 24)
+			//{
+			//	await DisplayAlert("Validation Error", "The gap between the start date and end date should be more than 1 day.", "OK");
+			//	return;
+			//}
+
 			if (timeSpan.TotalHours < 24)
 			{
 				await DisplayAlert("Validation Error", "The gap between the start date and end date should be more than 1 day.", "OK");
 				return;
 			}
-
-			if (selectedCount == 1)
+			if (leaveType != 1)
 			{
-				// Only one checkbox is selected, proceed with submission
-				bool result = await DisplayAlert("Confirmation", "Are you sure?", "Yes", "No");
-
-				if (result)
-				{
-					await DisplayAlert("Success", "Your request has been submitted successfully.", "OK");
-					await Navigation.PushAsync(new ControllersPage());
-				}
+				await DisplayAlert("Validation Error", "Select Only one Leave.", "OK");
+				return;
 			}
-			else
+			if (reasonCount != 1)
 			{
-				// More than one checkbox is selected, display an alert
-				await DisplayAlert("Error", "You have selected more than one checkbox. Please select only one reason.", "OK");
+				await DisplayAlert("Validation Error", "Select Only one Leave Reason.", "OK");
+				return;
+			}
+
+			// Only one checkbox is selected, proceed with submission
+			bool result = await DisplayAlert("Confirmation", "Are you sure?", "Yes", "No");
+
+			if (result)
+			{
+				await DisplayAlert("Success", "Your request has been submitted successfully.", "OK");
+				await Navigation.PushAsync(new ControllersPage());
 			}
 		}
 

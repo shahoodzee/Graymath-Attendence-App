@@ -1647,6 +1647,28 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.ViewPager2.targets": {}
         }
       },
+      "Xamarin.CommunityToolkit/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2125"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Xamarin.CommunityToolkit.targets": {}
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -1780,6 +1802,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Xamarin.CommunityToolkit": "1.3.1",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196"
         },
@@ -3095,6 +3118,48 @@
         "xamarin.androidx.viewpager2.nuspec"
       ]
     },
+    "Xamarin.CommunityToolkit/1.3.1": {
+      "sha512": "xuOzxPQ965GcQLcSEJl9jOLjhJLZNhoP2fVlSTyI+9zf/RySoVxhsnzpksAQDmaGIbWIgyNxfhtf0cs8rPvL/Q==",
+      "type": "package",
+      "path": "xamarin.communitytoolkit/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/PreserveXamarinCommunityToolkit.cs",
+        "build/Xamarin.CommunityToolkit.targets",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.dll",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.xml",
+        "lib/net471/Xamarin.CommunityToolkit.dll",
+        "lib/net471/Xamarin.CommunityToolkit.xml",
+        "lib/net472/Xamarin.CommunityToolkit.dll",
+        "lib/net472/Xamarin.CommunityToolkit.xml",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.dll",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.xml",
+        "lib/tizen40/Xamarin.CommunityToolkit.dll",
+        "lib/tizen40/Xamarin.CommunityToolkit.xml",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.dll",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.pri",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.xml",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.xml",
+        "xamarin.communitytoolkit.1.3.1.nupkg.sha512",
+        "xamarin.communitytoolkit.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.7.0": {
       "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
       "type": "package",
@@ -3403,6 +3468,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v13.0": [
       "Graymath >= 1.0.0",
+      "Xamarin.CommunityToolkit >= 1.3.1",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196"
     ]
@@ -3414,11 +3480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shahood\\source\\repos\\Graymath\\Graymath.Android\\Graymath.Android.csproj",
+      "projectUniqueName": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
       "projectName": "Graymath.Android",
-      "projectPath": "C:\\Users\\shahood\\source\\repos\\Graymath\\Graymath.Android\\Graymath.Android.csproj",
+      "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
       "packagesPath": "C:\\Users\\shahood\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shahood\\source\\repos\\Graymath\\Graymath.Android\\obj\\",
+      "outputPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3440,8 +3506,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\shahood\\source\\repos\\Graymath\\Graymath\\Graymath.csproj": {
-              "projectPath": "C:\\Users\\shahood\\source\\repos\\Graymath\\Graymath\\Graymath.csproj"
+            "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj": {
+              "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj"
             }
           }
         }
@@ -3450,17 +3516,13 @@
     "frameworks": {
       "monoandroid13.0": {
         "dependencies": {
-          "Xamarin.Essentials": {
+          "Xamarin.CommunityToolkit": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.3.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

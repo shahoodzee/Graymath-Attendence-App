@@ -18,12 +18,12 @@
             <StackLayout>
                 <!-- Title Section -->
 
-                <Label Text="Select Date of your Late Arrival" FontSize="18"/>
-                <DatePicker x:Name="DatePicker" />
+                <Label Text="Select Date" FontSize="18"/>
+                <DatePicker x:Name="DatePicker" Margin="0,-10,0,0"/>
 
-                <Label Text="Enter time of your Late Arrival" FontSize="18"/>
+                <Label Text="Enter time" FontSize="18"/>
                 <!-- Time Picker Section -->
-                <TimePicker x:Name="ArrivalTimePicker"/>
+                <TimePicker x:Name="ArrivalTimePicker" Margin="0,-10,0,0"/>
 
                 <Label Text="Select Late Reason" FontSize="18"/>
                 <StackLayout>
@@ -44,7 +44,7 @@
                 <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
 
                 <!-- Confirm Button to navigate to LateConfirmation Page -->
-                <Button Text="Confirm"
+                <Button Text="Apply"
                             CornerRadius="10"
                             HorizontalOptions="CenterAndExpand"
                             Clicked="ConfirmButton_Clicked"/>

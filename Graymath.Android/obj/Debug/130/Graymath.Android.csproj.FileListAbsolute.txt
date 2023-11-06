@@ -663,4 +663,3 @@ C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\res\drawab
 C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\res\drawable\checkin.png
 C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\res\drawable\splash_screen.xml
 C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\android\src\crc64232bfaa7a4307eda\SplashActivity.java
-C:\Users\shahood\source\repos\Graymath\Graymath.Android\obj\Debug\130\android\src\crc64d49be59e4e6eb85d\SplashActivity.java

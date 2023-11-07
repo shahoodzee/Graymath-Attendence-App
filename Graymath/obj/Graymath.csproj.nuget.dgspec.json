@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj": {}
+    "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj": {
+    "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj",
+        "projectUniqueName": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj",
         "projectName": "Graymath",
-        "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj",
+        "projectPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj",
         "packagesPath": "C:\\Users\\shahood\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\obj\\",
+        "outputPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -22,53 +22,53 @@
                 TabIndicatorColor="White"
                 TabContentBackgroundColor="White">
 
+            <!-- First Tab: Daily History -->
             <xct:TabViewItem
                     Text="Daily History"
                     TextColor="White"
                     TextColorSelected="White"
                     FontAttributes="Bold"
                     FontSize="15">
-                <Grid 
-                        BackgroundColor="White">
-                    <Label
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"/>
-                    <!-- Table for Daily History -->
-                        <ListView x:Name="DailyHistoryTable" IsVisible="False">
-                            <ListView.Header>
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Label Grid.Row="0" Grid.Column="0" Text="CheckIn" />
-                                    <Label Grid.Row="0" Grid.Column="1" Text="CheckOut" />
-                                    <Label Grid.Row="0" Grid.Column="2" Text="Date" />
-                                    <Label Grid.Row="0" Grid.Column="3" Text="Hours" />
-                                </Grid>
-                            </ListView.Header>
-                        </ListView>
-                </Grid>
+                <Frame CornerRadius="10" WidthRequest="100" HeightRequest="150" Padding="10" Margin="10">
+                    <ListView x:Name="DailyHistoryTable" IsVisible="True">
+                        <ListView.Header>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="CheckIn" />
+                                <Label Grid.Row="0" Grid.Column="1" Text="CheckOut" />
+                                <Label Grid.Row="0" Grid.Column="2" Text="Date" />
+                                <Label Grid.Row="0" Grid.Column="3" Text="Hours" />
+                            </Grid>
+                        </ListView.Header>
+                    </ListView>
+                </Frame>
             </xct:TabViewItem>
 
+            <!-- Second Tab: Leave History -->
             <xct:TabViewItem
                     Text="Leave History"
                     TextColor="White"
                     TextColorSelected="White"
                     FontAttributes="Bold"
                     FontSize="15">
-                <Grid>
-                    <Label    
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"/>
-                    <!-- Table for Leave History -->
-                    <Frame CornerRadius="10" HasShadow="True" WidthRequest="300" HeightRequest="250" Padding="20" Margin="30">
-                        <ListView x:Name="LeaveHistoryTable" IsVisible="False">
+                
+                <Frame CornerRadius="10" WidthRequest="100" HeightRequest="150" Padding="10" Margin="10">
+                    <StackLayout>
+                        <Label Text="Summary" FontSize="20" TextColor="Black" IsVisible="True" />
+                        <Label Text="Total Leaves:" FontSize="12" TextColor="Black" IsVisible="True" />
+                        <Label Text="Annual Leaves:" FontSize="12" TextColor="Black" IsVisible="True" />
+                        <Label Text="Sick Leaves:" FontSize="12" TextColor="Black" IsVisible="True" />
+                        <Label Text="Casual Leaves:" FontSize="12" TextColor="Black" IsVisible="True" />
+
+                        <ListView x:Name="LeaveHistoryTable" IsVisible="True">
                             <ListView.Header>
                                 <Grid>
                                     <Grid.RowDefinitions>
@@ -83,8 +83,8 @@
                                 </Grid>
                             </ListView.Header>
                         </ListView>
-                    </Frame>
-                </Grid>
+                    </StackLayout>
+                </Frame>
             </xct:TabViewItem>
         </xct:TabView>
     </Grid>

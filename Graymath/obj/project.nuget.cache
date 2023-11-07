@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O2YCKaYuJd0Oz/7BuM1IMUNgGXY8MjSfVMIzZEnn9ymSaQEWAENOZNqiBFaBYb4/MLItx6szuABlsvtemwDKcg==",
+  "dgSpecHash": "6Fwv8PiOE2uo/ZGX2AZTKmxuiQDJgnfpSCVnoyW9nZNeA4EB+/lyV8k7F98OYRlMNrLe5syN2+hK8JpqCNK2aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj",
+  "projectFilePath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shahood\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\shahood\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

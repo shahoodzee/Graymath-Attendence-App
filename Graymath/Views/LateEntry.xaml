@@ -14,15 +14,22 @@
         </Grid>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
-            <StackLayout>
-                <!-- Title Section -->
-
+        <!-- Card-Like Container for Input Fields -->
+        <StackLayout>
+            <StackLayout  Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
+                <Label Text="Leave Request Page"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Margin="0,40,0,0"></Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+ 
+                    <!-- Date Section -->
                 <Label Text="Select Date" FontSize="18"/>
                 <DatePicker x:Name="DatePicker" Margin="0,-10,0,0"/>
 
-                <Label Text="Enter time" FontSize="18"/>
                 <!-- Time Picker Section -->
+                <Label Text="Enter time" FontSize="18"/>
                 <TimePicker x:Name="ArrivalTimePicker" Margin="0,-10,0,0"/>
 
                 <Label Text="Select Late Reason" FontSize="18"/>
@@ -46,6 +53,8 @@
                 <!-- Confirm Button to navigate to LateConfirmation Page -->
                 <Button Text="Apply"
                             CornerRadius="10"
+                            BackgroundColor="#007AFF" 
+                            TextColor="WhiteSmoke"
                             HorizontalOptions="CenterAndExpand"
                             Clicked="ConfirmButton_Clicked"/>
             </StackLayout>

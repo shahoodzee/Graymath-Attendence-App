@@ -45,7 +45,7 @@
                 </StackLayout>
                 <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
                 
-                <Button Text="Submit" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20" />
+                <Button Text="Submit" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" TextColor="WhiteSmoke" CornerRadius="20" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

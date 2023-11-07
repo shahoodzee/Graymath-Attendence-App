@@ -58,9 +58,10 @@ namespace Graymath.Views
 			//	return;
 			//}
 
-			if (timeSpan.TotalHours < 24)
+			// Check if the start date is greater than the end date
+			if (StartDatePicker.Date > EndDatePicker.Date)
 			{
-				await DisplayAlert("Validation Error", "The gap between the start date and end date should be more than 1 day.", "OK");
+				await DisplayAlert("Validation Error", "Start date cannot be greater than end date", "OK");
 				return;
 			}
 			if (leaveType != 1)

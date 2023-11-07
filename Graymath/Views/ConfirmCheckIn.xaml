@@ -16,13 +16,46 @@
     <ContentPage.Content>
         <StackLayout>
             <!-- Card-Like Container for Input Fields -->
-                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Label Text="Check-In Time"
-                           FontSize="40"/>
-                    <TimePicker x:Name="CheckInPicker" Time="09:00"/>
-
-                    <Button Text="Check In" Clicked="CheckInButton_Clicked" HorizontalOptions="Center" BackgroundColor="#007AFF" TextColor="WhiteSmoke" />
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Check-In Time" FontSize="20"/>
+                <TimePicker x:Name="CheckInPicker" Time="09:00"/>
+                <Label Text="Check-In as:" FontSize="20"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="CasualCheckInCheckBox" />
+                        <Label Text="Casual" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="WFHCheckBox" Margin="0,-10,0,0"/>
+                        <Label Text="Work From Home" VerticalOptions="Center" Margin="0,-10,0,0"/>
+                    </StackLayout>
                 </StackLayout>
+
+                <!-- "Select WFH Reason" section -->
+                <Label Text="Select WFH Reason" FontSize="18" IsVisible="False" x:Name="WFHReasonLabel"/>
+                <StackLayout x:Name="WFHReasonLayout" IsVisible="False">
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="MedicalEmergencyCheckBox" />
+                        <Label Text="Medical Emergency" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
+                        <CheckBox x:Name="FamilyEmergencyCheckBox" />
+                        <Label Text="Family Emergency" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
+                        <CheckBox x:Name="OtherReasonCheckBox" />
+                        <Label Text="Other" VerticalOptions="Center" />
+                    </StackLayout>
+                    <Editor x:Name="OtherReasonEditor"
+                        Placeholder="Explain your reason..."
+                        IsTextPredictionEnabled="False"
+                        IsSpellCheckEnabled="False"
+                        HeightRequest="50"
+                        IsVisible="False" />
+                </StackLayout>
+
+                <Button Text="Check In" Clicked="CheckInButton_Clicked" HorizontalOptions="Center" BackgroundColor="#007AFF" TextColor="WhiteSmoke" CornerRadius="20"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

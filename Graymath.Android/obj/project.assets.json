@@ -3480,11 +3480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
+      "projectUniqueName": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
       "projectName": "Graymath.Android",
-      "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
+      "projectPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
       "packagesPath": "C:\\Users\\shahood\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.Android\\obj\\",
+      "outputPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3506,8 +3506,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj": {
-              "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj"
+            "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj": {
+              "projectPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj"
             }
           }
         }

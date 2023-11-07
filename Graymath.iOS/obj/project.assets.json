@@ -1203,11 +1203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.iOS\\Graymath.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.iOS\\Graymath.iOS.csproj",
       "projectName": "Graymath.iOS",
-      "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.iOS\\Graymath.iOS.csproj",
+      "projectPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.iOS\\Graymath.iOS.csproj",
       "packagesPath": "C:\\Users\\shahood\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath.iOS\\obj\\",
+      "outputPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1229,8 +1229,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj": {
-              "projectPath": "C:\\Users\\shahood\\Source\\Repos\\GraymathNew\\Graymath\\Graymath.csproj"
+            "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj": {
+              "projectPath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath\\Graymath.csproj"
             }
           }
         }

@@ -82,11 +82,7 @@ namespace Graymath.Views
 		private async void OnLeaveClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckOut button click event
-			bool result = await DisplayAlert("Confirmation", "Are you sure ?", "Yes", "No");
-			if (result)
-			{
-				await Navigation.PushAsync(new LeaveRequestPage());
-			}
+			await Navigation.PushAsync(new LeaveRequestPage());
 		}
 
 		private async void OnHistoryClicked(object sender, EventArgs e)

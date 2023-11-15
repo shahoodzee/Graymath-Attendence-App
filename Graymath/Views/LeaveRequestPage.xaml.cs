@@ -21,7 +21,14 @@ namespace Graymath.Views
 			{
 				OtherReasonEditor.IsVisible = e.Value;
 			};
-		}
+            StartDatePicker.DateSelected += StartDatePicker_DateSelected;
+
+            void StartDatePicker_DateSelected(object sender, DateChangedEventArgs e)
+            {
+                // Set the EndDatePicker's date to match the selected start date
+                EndDatePicker.Date = e.NewDate;
+            }
+        }
 		private async void OnSubmitClicked(object sender, EventArgs e)
 		{
 			// Check how many checkboxes are selected

@@ -25,10 +25,10 @@
             </StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                 <!-- Start date Picker Section -->
-                <Label Text="Select Start Date" FontSize="18"/>
+                <Label Text="Start Date" FontSize="18"/>
                 <DatePicker x:Name="StartDatePicker" Margin="0,-12,0,0"/>
                 <!-- End date Picker Section -->
-                <Label Text="Select End Date" FontSize="18"/>
+                <Label Text="End Date" FontSize="18"/>
                 <DatePicker x:Name="EndDatePicker" Margin="0,-12,0,0"/>
                 <!-- Time Picker Section -->
                 <!--<Label Text="Enter time" FontSize="18"/>

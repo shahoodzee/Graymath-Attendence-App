@@ -21,6 +21,13 @@ namespace Graymath.Views
 			{
 				OtherReasonEditor.IsVisible = e.Value;
 			};
+			
+			StartDatePicker.DateSelected += StartDatePicker_DateSelected;
+			void StartDatePicker_DateSelected(object sender, DateChangedEventArgs e)
+			{
+				// Set the EndDatePicker's date to match the selected start date
+				EndDatePicker.Date = e.NewDate;
+			}
 		}
 		private void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
 		{
@@ -56,6 +63,7 @@ namespace Graymath.Views
 			}
 		}
 
+
 		private async void OnSubmitClicked(object sender, EventArgs e)
 		{
 			// Check how many checkboxes are selected
@@ -85,12 +93,7 @@ namespace Graymath.Views
 			// Calculate the time span between start and end dates
 			TimeSpan timeSpan = endDate - startDate;
 
-			// Check if the time span is less than 1 day (24 hours)
-			//if (timeSpan.TotalHours < 24)
-			//{
-			//	await DisplayAlert("Validation Error", "The gap between the start date and end date should be more than 1 day.", "OK");
-			//	return;
-			//}
+
 
 			// Check if the start date is greater than the end date
 			if (StartDatePicker.Date > EndDatePicker.Date)
@@ -100,12 +103,12 @@ namespace Graymath.Views
 			}
 			if (leaveType != 1)
 			{
-				await DisplayAlert("Validation Error", "Select Only one Leave.", "OK");
+				await DisplayAlert("Validation Error", "Select one Leave.", "OK");
 				return;
 			}
 			if (reasonCount != 1)
 			{
-				await DisplayAlert("Validation Error", "Select Only one Leave Reason.", "OK");
+				await DisplayAlert("Validation Error", "Select one Leave Reason.", "OK");
 				return;
 			}
 

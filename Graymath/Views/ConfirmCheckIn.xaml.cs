@@ -24,6 +24,22 @@ namespace Graymath.Views
 			};
 			WFHCheckBox.CheckedChanged += WFHCheckBox_CheckedChanged;
 		}
+		private void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
+		{
+			var currentCheckBox = sender as CheckBox;
+			if (currentCheckBox.IsChecked)
+			{
+				// Uncheck other checkboxes
+				if (currentCheckBox != MedicalEmergencyCheckBox)
+					MedicalEmergencyCheckBox.IsChecked = false;
+
+				if (currentCheckBox != FamilyEmergencyCheckBox)
+					FamilyEmergencyCheckBox.IsChecked = false;
+
+				if (currentCheckBox != OtherReasonCheckBox)
+					OtherReasonCheckBox.IsChecked = false;
+			}
+		}
 		private void WFHCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
 		{
 			// Set the visibility of the "Select WFH Reason" section based on the checkbox state
@@ -33,8 +49,8 @@ namespace Graymath.Views
 		}
 		private async void CheckInButton_Clicked(object sender, EventArgs e)
         {
-            int checkhInCount = 0,          // Check how many checkboxes are selected
-			reasonCount = 0;
+            int reasonCount = 0;		// Check how many checkboxes are selected
+
 
 			if (MedicalEmergencyCheckBox.IsChecked)
 				reasonCount++;
@@ -45,17 +61,6 @@ namespace Graymath.Views
 			if (OtherReasonCheckBox.IsChecked)
 				reasonCount++;
 
-			if (CasualCheckInCheckBox.IsChecked)
-                checkhInCount++;
-
-			if (WFHCheckBox.IsChecked)
-				checkhInCount++;
-
-            if (checkhInCount != 1)
-            {
-				await DisplayAlert("Validation Error", "Select One Check-In Type.", "OK");
-                return;
-			}
 			if (WFHCheckBox.IsChecked && reasonCount != 1)
 			{
 				await DisplayAlert("Validation Error", "Select One WFH Reason", "OK");

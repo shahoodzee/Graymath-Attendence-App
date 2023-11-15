@@ -10,7 +10,7 @@ namespace Graymath
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new LoginPage());
+			MainPage = new NavigationPage(new ControllersPage());
 		}
 
 		protected override void OnStart()

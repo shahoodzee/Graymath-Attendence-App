@@ -41,8 +41,8 @@ namespace Graymath.Views
 		private async void OnCheckInClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckIn button click event
-			bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in?", "Yes", "No");
-			if (result)
+			//bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in?", "Yes", "No");
+			//if (result)
 			{
 				await Navigation.PushAsync(new ConfirmCheckIn());
 			}
@@ -61,8 +61,8 @@ namespace Graymath.Views
 		private async void OnLateClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckOut button click event
-			bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in Late?", "Yes", "No");
-			if (result)
+			//bool result = await DisplayAlert("Confirmation", "Are you sure you want to check-in Late?", "Yes", "No");
+			//if (result)
 			{
 				await Navigation.PushAsync(new LateEntry());
 			}
@@ -82,8 +82,8 @@ namespace Graymath.Views
 		private async void OnLeaveClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckOut button click event
-			bool result = await DisplayAlert("Confirmation", "Are you sure ?", "Yes", "No");
-			if (result)
+			//bool result = await DisplayAlert("Confirmation", "Are you sure ?", "Yes", "No");
+			//if (result)
 			{
 				await Navigation.PushAsync(new LeaveRequestPage());
 			}

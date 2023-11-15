@@ -17,22 +17,16 @@
         
         <StackLayout>
             <!-- Card-Like Container for Input Fields -->
-            <StackLayout  Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
-                <Label Text="Leave Request Page"
-                       FontSize="30"
-                       FontAttributes="Bold"
-                       Margin="0,40,0,0"></Label>
+            <StackLayout  Orientation="Horizontal"  HorizontalOptions="Center">
+                <Label Text="Leave Request" FontSize="40" Margin="0,40,0,0"></Label>
             </StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                 <!-- Start date Picker Section -->
-                <Label Text="Select Start Date" FontSize="18"/>
+                <Label Text="Start Date" FontSize="18"/>
                 <DatePicker x:Name="StartDatePicker" Margin="0,-12,0,0"/>
                 <!-- End date Picker Section -->
-                <Label Text="Select End Date" FontSize="18"/>
+                <Label Text="End Date" FontSize="18"/>
                 <DatePicker x:Name="EndDatePicker" Margin="0,-12,0,0"/>
-                <!-- Time Picker Section -->
-                <!--<Label Text="Enter time" FontSize="18"/>
-                <TimePicker x:Name="ArrivalTimePicker" Time="07:00" Margin="0,-12,0,0"/>-->
 
                 <Label Text="Select Leave Type" FontSize="18"/>
                 <StackLayout>
@@ -69,17 +63,23 @@
                         <Label Text="Other" VerticalOptions="Center" />
                     </StackLayout>
                 </StackLayout>
-                <Editor x:Name="OtherReasonEditor"
-                        Placeholder="Explain your reason..."
-                        IsTextPredictionEnabled="False"
-                        IsSpellCheckEnabled="False"
-                        BackgroundColor="LightGray"
-                        FontSize="15"
-                        HeightRequest="150"
-                        WidthRequest="200"
-                        IsVisible="False"
-                        Keyboard="Chat"/>
-                <Button Text="Apply" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,10,0,0" />
+                <Frame x:Name="OtherReasonEditor" HasShadow="True" BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200" IsVisible="False">
+                    <Editor Placeholder="Explain your reason..." 
+                                Margin="-10,-15,10,-10"
+                                AutoSize="TextChanges"
+                                MaxLength="500"
+                                Keyboard="Text"
+                                TextColor="Black"/>
+                </Frame>
+
+                <Button Text="Apply"
+                        Margin="0,30,0,0"
+                        Clicked="OnSubmitClicked" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="#007AFF" 
+                        TextColor="WhiteSmoke" 
+                        CornerRadius="25"
+                        WidthRequest="120"/>
             </StackLayout>
         </StackLayout>
 

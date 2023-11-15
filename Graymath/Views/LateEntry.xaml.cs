@@ -21,8 +21,24 @@ namespace Graymath.Views
 				OtherReasonEditor.IsVisible = e.Value;
 			};
 		}
+		private void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
+		{
+			var currentCheckBox = sender as CheckBox;
+			if (currentCheckBox.IsChecked)
+			{
+				// Uncheck other checkboxes
+				if (currentCheckBox != MedicalEmergencyCheckBox)
+					MedicalEmergencyCheckBox.IsChecked = false;
 
-        private async void ConfirmButton_Clicked(object sender, EventArgs e)
+				if (currentCheckBox != FamilyEmergencyCheckBox)
+					FamilyEmergencyCheckBox.IsChecked = false;
+
+				if (currentCheckBox != OtherReasonCheckBox)
+					OtherReasonCheckBox.IsChecked = false;
+			}
+		}
+
+		private async void ConfirmButton_Clicked(object sender, EventArgs e)
         {
 			int selectedCount = 0;
 
@@ -35,9 +51,9 @@ namespace Graymath.Views
 			if (OtherReasonCheckBox.IsChecked)
 				selectedCount++;
 
-			if (selectedCount > 1)
+			if (selectedCount != 1)
 			{
-				await DisplayAlert("Error", "You have selected more than one checkbox. Please select only one reason.", "OK");
+				await DisplayAlert("Error", "Please select one reason.", "OK");
 				return;
 			}
 			else

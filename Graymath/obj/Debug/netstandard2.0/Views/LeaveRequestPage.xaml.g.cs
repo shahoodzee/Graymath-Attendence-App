@@ -41,7 +41,7 @@ namespace Graymath.Views {
         private global::Xamarin.Forms.CheckBox OtherReasonCheckBox;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Editor OtherReasonEditor;
+        private global::Xamarin.Forms.Frame OtherReasonEditor;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -54,7 +54,7 @@ namespace Graymath.Views {
             MedicalEmergencyCheckBox = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CheckBox>(this, "MedicalEmergencyCheckBox");
             FamilyEmergencyCheckBox = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CheckBox>(this, "FamilyEmergencyCheckBox");
             OtherReasonCheckBox = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CheckBox>(this, "OtherReasonCheckBox");
-            OtherReasonEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "OtherReasonEditor");
+            OtherReasonEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "OtherReasonEditor");
         }
     }
 }

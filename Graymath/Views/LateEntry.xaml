@@ -14,51 +14,71 @@
         </Grid>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <!-- Card-Like Container for Input Fields -->
-        <StackLayout>
-            <StackLayout  Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
-                <Label Text="Leave Request Page"
-                       FontSize="30"
-                       FontAttributes="Bold"
-                       Margin="0,40,0,0"></Label>
-            </StackLayout>
-            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
- 
-                    <!-- Date Section -->
-                <Label Text="Select Date" FontSize="18"/>
-                <DatePicker x:Name="DatePicker" Margin="0,-10,0,0"/>
-
-                <!-- Time Picker Section -->
-                <Label Text="Enter time" FontSize="18"/>
-                <TimePicker x:Name="ArrivalTimePicker" Margin="0,-10,0,0"/>
-
-                <Label Text="Select Late Reason" FontSize="18"/>
-                <StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <CheckBox x:Name="MedicalEmergencyCheckBox" />
-                        <Label Text="Medical Emergency" VerticalOptions="Center" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <CheckBox x:Name="FamilyEmergencyCheckBox" />
-                        <Label Text="Family Emergency" VerticalOptions="Center" />
-                    </StackLayout>
-                    <!-- Add more predefined reasons with checkboxes as needed -->
-                    <StackLayout Orientation="Horizontal">
-                        <CheckBox x:Name="OtherReasonCheckBox" />
-                        <Label Text="Other" VerticalOptions="Center" />
-                    </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="0,0,0,0">
+                <!--Entry Logo-->
+                <StackLayout  Orientation="Horizontal"  HorizontalOptions="Center">
+                    <Label Text="Late Entry" FontSize="40" Margin="0,40,0,0"></Label>
                 </StackLayout>
-                <Editor x:Name="OtherReasonEditor" Placeholder="Explain your reason..." HeightRequest="40" IsVisible="False" />
+                
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
 
-                <!-- Confirm Button to navigate to LateConfirmation Page -->
-                <Button Text="Apply"
-                            CornerRadius="10"
+                    <!-- Date Section -->
+                    <Label Text="Select Date" FontSize="18"/>
+                    <DatePicker x:Name="DatePicker" Margin="0,-10,0,0"/>
+
+                    <!-- Time Picker Section -->
+                    <Label Text="Enter time" FontSize="18"/>
+                    <TimePicker x:Name="ArrivalTimePicker" Margin="0,-10,0,0"/>
+
+                    <Label Text="Select Late Reason" FontSize="18"/>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,-2,0,0">
+                            <CheckBox x:Name="MedicalEmergencyCheckBox" CheckedChanged="OnCheckBoxCheckedChanged"/>
+                            <Label Text="Medical Emergency" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
+                            <CheckBox x:Name="FamilyEmergencyCheckBox" CheckedChanged="OnCheckBoxCheckedChanged"/>
+                            <Label Text="Family Emergency" VerticalOptions="Center" />
+                        </StackLayout>
+                        <!-- Add more predefined reasons with checkboxes as needed -->
+                        <StackLayout Orientation="Horizontal" Margin="0,-10,0,0">
+                            <CheckBox x:Name="OtherReasonCheckBox" CheckedChanged="OnCheckBoxCheckedChanged"/>
+                            <Label Text="Other" VerticalOptions="Center" />
+                        </StackLayout>
+                    </StackLayout>
+                    <Frame x:Name="OtherReasonEditor" HasShadow="True" BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200" IsVisible="False">
+                        <Editor Placeholder="Explain your reason..." 
+                                Margin="-10,-15,10,-10"
+                                AutoSize="TextChanges"
+                                MaxLength="500"
+                                Keyboard="Text"
+                                TextColor="Black"/>
+                    </Frame>
+
+
+                    <Frame BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200">
+                        <Editor Placeholder="Description"
+                                Margin="-10,-15,10,-10"
+                                AutoSize="TextChanges"
+                                MaxLength="500"
+                                Keyboard="Text"
+                                TextColor="Black"/>
+                    </Frame>
+                    <!-- Confirm Button to navigate to LateConfirmation Page -->
+                    <Button Text="Apply"
+                            CornerRadius="25"
+                            WidthRequest="120"
                             BackgroundColor="#007AFF" 
                             TextColor="WhiteSmoke"
                             HorizontalOptions="CenterAndExpand"
-                            Clicked="ConfirmButton_Clicked"/>
+                            Clicked="ConfirmButton_Clicked"
+                            Margin="0,10,0,20"/>
+                </StackLayout>
+
             </StackLayout>
 
-        </StackLayout>
+
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

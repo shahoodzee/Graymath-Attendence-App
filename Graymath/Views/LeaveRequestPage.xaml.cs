@@ -22,6 +22,40 @@ namespace Graymath.Views
 				OtherReasonEditor.IsVisible = e.Value;
 			};
 		}
+		private void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
+		{
+			var currentCheckBox = sender as CheckBox;
+			if (currentCheckBox.IsChecked)
+			{
+				// Uncheck other checkboxes
+				if (currentCheckBox != CasualTypeCheckBox)
+					CasualTypeCheckBox.IsChecked = false;
+
+				if (currentCheckBox != AnnualTypeCheckBox)
+					AnnualTypeCheckBox.IsChecked = false;
+
+				if (currentCheckBox != SickTypeCheckBox)
+					SickTypeCheckBox.IsChecked = false;
+			}
+		}
+
+		private void OnLRCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
+		{
+			var currentCheckBox = sender as CheckBox;
+			if (currentCheckBox.IsChecked)
+			{
+				// Uncheck other checkboxes
+				if (currentCheckBox != MedicalEmergencyCheckBox)
+					MedicalEmergencyCheckBox.IsChecked = false;
+
+				if (currentCheckBox != FamilyEmergencyCheckBox)
+					FamilyEmergencyCheckBox.IsChecked = false;
+
+				if (currentCheckBox != OtherReasonCheckBox)
+					OtherReasonCheckBox.IsChecked = false;
+			}
+		}
+
 		private async void OnSubmitClicked(object sender, EventArgs e)
 		{
 			// Check how many checkboxes are selected

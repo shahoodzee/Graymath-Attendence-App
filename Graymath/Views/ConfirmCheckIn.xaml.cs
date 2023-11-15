@@ -72,7 +72,8 @@ namespace Graymath.Views
             }
             else
             {
-                // User clicked "No," you can handle the cancellation here.
+				// User clicked "No," you can handle the cancellation here.
+				return;
             }
         }
     }

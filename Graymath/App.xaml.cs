@@ -23,6 +23,13 @@ namespace Graymath
 
 		protected override void OnResume()
 		{
+
+		}
+
+		// Method to handle logout and reset the navigation stack
+		public void Logout()
+		{
+			MainPage = new NavigationPage(new LoginPage());
 		}
 	}
 }

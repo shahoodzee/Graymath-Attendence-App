@@ -35,7 +35,6 @@ C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\AppS
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\ConfirmCheckIn.xaml.g.cs
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\ConfirmCheckOut.xaml.g.cs
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\ControllersPage.xaml.g.cs
-C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\ForgotPassword.xaml.g.cs
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\HistoryPage.xaml.g.cs
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\InvalidCredentials.xaml.g.cs
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\LateEntry.xaml.g.cs
@@ -52,3 +51,4 @@ C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\refi
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Graymath.pdb
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\ref\Graymath.dll
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\HistoryPage1.xaml.g.cs
+C:\Users\shahood\source\repos\GraymathNew\Graymath\obj\Debug\netstandard2.0\Views\ForgotPasswordPage.xaml.g.cs

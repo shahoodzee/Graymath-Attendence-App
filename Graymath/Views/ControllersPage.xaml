@@ -16,19 +16,30 @@
                 <!-- Fill remaining horizontal space -->
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0"
+            <Image Grid.Row="0"
                Grid.Column="0"
-               Text="GrayMath"
-               VerticalOptions="Start"
+               Source="Logout"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="StartAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLogoutImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row="0"
+               Grid.Column="1"
+               Text="//GrayMath"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
                FontAttributes="Bold"
                FontSize="20"
                TextColor="White"/>
 
             <Image Grid.Row="0"
-               Grid.Column="1"
+               Grid.Column="2"
                Source="Bell"
-               VerticalOptions="Center"
-               HorizontalOptions="End">
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="EndAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnBellImageTapped" />
                 </Image.GestureRecognizers>
@@ -36,6 +47,7 @@
 
         </Grid>
     </NavigationPage.TitleView>
+
 
 
 
@@ -76,13 +88,13 @@
                 </Image.GestureRecognizers>
             </Image>
 
-            <Image Source="WFH.png"
+            <!--<Image Source="WFH.png"
                    HeightRequest="50"   
                    Margin="0,0,0,10">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnWorkFromHomeClicked" />
                 </Image.GestureRecognizers>
-            </Image>
+            </Image>-->
 
             <Image Source="History.png"
                    HeightRequest="50"   

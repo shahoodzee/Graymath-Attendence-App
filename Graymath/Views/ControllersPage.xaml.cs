@@ -26,6 +26,18 @@ namespace Graymath.Views
 			await Navigation.PushAsync(new NotificationsPage());
 		}
 
+		private async void OnLogoutImageTapped(object sender, EventArgs e)
+		{
+			// Handle the CheckOut button click event
+			bool result = await DisplayAlert("Confirmation", "Are you sure you want to log-out?", "Yes", "No");
+			if (result)
+			{
+				await Navigation.PushAsync(new LoginPage());
+				// Call the logout method in App.xaml.cs
+				(Application.Current as App)?.Logout();
+			}
+		}
+
 		private async void OnCheckInClicked(object sender, EventArgs e)
 		{
 			// Handle the CheckIn button click event

@@ -17,10 +17,11 @@ namespace Graymath.Views
 			InitializeComponent();
 
 		}
-		private void OnForgotPasswordTapped(object sender, EventArgs e)
+		private async void OnForgotPasswordTapped(object sender, EventArgs e)
 		{
 			// Handle the "Forgot Password" link tapped event
-			// You can navigate to the forgot password page or show a password reset dialog here
+			await Navigation.PushAsync(new ForgotPasswordPage());
+
 		}
 		private bool IsValidEmail(string email)
 		{
@@ -28,7 +29,6 @@ namespace Graymath.Views
 			string emailPattern = @"^[\w\.-]+@[\w\.-]+\.\w+$";
 			return System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern);
 		}
-
 		private bool IsValidPassword(string password)
 		{
 			// Password validation: 8 characters with capital letters and special characters

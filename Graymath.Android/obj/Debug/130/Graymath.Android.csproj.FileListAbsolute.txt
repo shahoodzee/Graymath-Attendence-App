@@ -1350,3 +1350,4 @@ C:\Users\shahood\Source\Repos\GraymathNew\Graymath.Android\obj\Debug\130\android
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath.Android\obj\Debug\130\android\src\crc64515ee83f00766c60\SemanticEffectRouter_SemanticAccessibilityDelegate.java
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath.Android\obj\Debug\130\android\src\crc64515ee83f00766c60\VisualFeedbackEffectRouter_FastRendererOnLayoutChangeListener.java
 C:\Users\shahood\Source\Repos\GraymathNew\Graymath.Android\obj\Debug\130\android\src\crc645b8ccbad6ecd7dce\SideMenuViewRenderer.java
+C:\Users\shahood\source\repos\GraymathNew\Graymath.Android\obj\Debug\130\res\drawable\logout.png

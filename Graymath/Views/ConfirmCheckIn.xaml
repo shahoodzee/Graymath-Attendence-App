@@ -8,7 +8,6 @@
                Grid.Column="0"
                Text="GrayMath"
                VerticalOptions="Start"
-               FontAttributes="Bold"
                FontSize="20"
                TextColor="White"/>
         </Grid>
@@ -46,6 +45,7 @@
                     <Frame x:Name="OtherReasonEditor" HasShadow="True" BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200" IsVisible="False">
                         <Editor Placeholder="Explain your reason..." 
                                 Margin="-10,-15,10,-10"
+                                x:Name="OtherReasonEditor2"
                                 AutoSize="TextChanges"
                                 MaxLength="500"
                                 Keyboard="Text"
@@ -53,13 +53,25 @@
                     </Frame>
                 </StackLayout>
 
-                <Button Text="Check In" 
+                <!--<Button Text="Check In" 
                         Clicked="CheckInButton_Clicked" 
                         HorizontalOptions="Center" 
                         BackgroundColor="#007AFF" 
                         TextColor="WhiteSmoke" 
                         CornerRadius="25"
-                        WidthRequest="120"/>
+                        WidthRequest="120"/>-->
+
+                <Image Source="checkIn1"
+                       HeightRequest="150"
+                       WidthRequest="200"
+                       Margin="0,-20,0,0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="CheckInButton_Clicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

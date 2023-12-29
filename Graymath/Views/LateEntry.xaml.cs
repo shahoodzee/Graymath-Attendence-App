@@ -51,6 +51,16 @@ namespace Graymath.Views
 			if (OtherReasonCheckBox.IsChecked)
 				selectedCount++;
 
+			// Check if OtherReasonEditor is visible
+			if (OtherReasonEditor.IsVisible)
+			{
+				// Check if OtherReasonEditor2 (Editor inside the frame) is empty
+				if (string.IsNullOrWhiteSpace(OtherReasonEditor2.Text))
+				{
+					await DisplayAlert("Validation Error", "Please Explain your Other reason", "OK");
+					return;
+				}
+			}
 			if (selectedCount != 1)
 			{
 				await DisplayAlert("Error", "Please select one reason.", "OK");

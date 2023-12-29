@@ -19,6 +19,9 @@
             <Image Grid.Row="0"
                Grid.Column="0"
                Source="Logout"
+               HeightRequest="30"
+               WidthRequest="30"
+               Margin="0,0,0,0"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="StartAndExpand">
                 <Image.GestureRecognizers>
@@ -29,15 +32,16 @@
             <Label Grid.Row="0"
                Grid.Column="1"
                Text="//GrayMath"
+               Margin="-50,0,0,0"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="CenterAndExpand"
-               FontAttributes="Bold"
                FontSize="20"
                TextColor="White"/>
 
             <Image Grid.Row="0"
                Grid.Column="2"
                Source="Bell"
+               Margin="-50,0,0,0"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="EndAndExpand">
                 <Image.GestureRecognizers>

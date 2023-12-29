@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"Graymath.Android.dll",
 		"FormsViewGroup.dll",
 		"Graymath.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

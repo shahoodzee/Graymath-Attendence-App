@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w+OsQpiHGAD9oAjzX7yWfmc7VAPeCJDqKxaQfjwgGfCkpJ/JJ7ek1Jx+4VLs/3XNHN8PfwMMRRdoM6XC02DlkQ==",
+  "dgSpecHash": "5whfqhcv/k0EftZBgKkcBntnV1P34og06PyagHPgvqzu4wKUzhLHX96JNKHnw7gNx7Tx9jr8qA0FnHApuisX9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\shahood\\source\\repos\\GraymathNew\\Graymath.Android\\Graymath.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\shahood\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\shahood\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\shahood\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\shahood\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",

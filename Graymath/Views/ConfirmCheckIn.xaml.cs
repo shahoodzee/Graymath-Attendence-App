@@ -66,8 +66,17 @@ namespace Graymath.Views
 				await DisplayAlert("Validation Error", "Select One WFH Reason", "OK");
 				return;
 			}
-
-            bool answer = await DisplayAlert("Confirmation", $"Are you sure you want to CheckIn ", "Yes", "No");
+			// Check if OtherReasonEditor is visible
+			if (OtherReasonEditor.IsVisible)
+			{
+				// Check if OtherReasonEditor2 (Editor inside the frame) is empty
+				if (string.IsNullOrWhiteSpace(OtherReasonEditor2.Text))
+				{
+					await DisplayAlert("Validation Error", "Please Explain your Other reason", "OK");
+					return;
+				}
+			}
+			bool answer = await DisplayAlert("Confirmation", $"Are you sure you want to CheckIn ", "Yes", "No");
 
             if (answer)
             {

@@ -24,14 +24,14 @@
                 <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
 
                     <!-- Date Section -->
-                    <Label Text="Select Date" FontSize="18"/>
+                    <Label Text="Date" FontSize="18"/>
                     <DatePicker x:Name="DatePicker" Margin="0,-10,0,0"/>
 
                     <!-- Time Picker Section -->
-                    <Label Text="Enter time" FontSize="18"/>
+                    <Label Text="Time" FontSize="18"/>
                     <TimePicker x:Name="ArrivalTimePicker" Margin="0,-10,0,0"/>
 
-                    <Label Text="Select Late Reason" FontSize="18"/>
+                    <Label Text="Reason*" FontSize="18"/>
                     <StackLayout>
                         <StackLayout Orientation="Horizontal" Margin="0,-2,0,0">
                             <CheckBox x:Name="MedicalEmergencyCheckBox" CheckedChanged="OnCheckBoxCheckedChanged"/>
@@ -49,6 +49,7 @@
                     </StackLayout>
                     <Frame x:Name="OtherReasonEditor" HasShadow="True" BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200" IsVisible="False">
                         <Editor Placeholder="Explain your reason..." 
+                                x:Name="OtherReasonEditor2"
                                 Margin="-10,-15,10,-10"
                                 AutoSize="TextChanges"
                                 MaxLength="500"
@@ -57,23 +58,25 @@
                     </Frame>
 
 
-                    <Frame BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200">
+                    <Frame BackgroundColor="LightGray" CornerRadius="10" HeightRequest="100" WidthRequest="200">
                         <Editor Placeholder="Description"
+                                x:Name="DescriptionEditor"
                                 Margin="-10,-15,10,-10"
                                 AutoSize="TextChanges"
                                 MaxLength="500"
                                 Keyboard="Text"
                                 TextColor="Black"/>
                     </Frame>
-                    <!-- Confirm Button to navigate to LateConfirmation Page -->
-                    <Button Text="Apply"
-                            CornerRadius="25"
-                            WidthRequest="120"
-                            BackgroundColor="#007AFF" 
-                            TextColor="WhiteSmoke"
-                            HorizontalOptions="CenterAndExpand"
-                            Clicked="ConfirmButton_Clicked"
-                            Margin="0,10,0,20"/>
+                    <Image Source="Apply"
+                           HeightRequest="100"
+                           WidthRequest="200"
+                           Margin="0,-20,0,0"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ConfirmButton_Clicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
                 </StackLayout>
 
             </StackLayout>

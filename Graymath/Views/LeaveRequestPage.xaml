@@ -28,7 +28,7 @@
                 <Label Text="End Date" FontSize="18"/>
                 <DatePicker x:Name="EndDatePicker" Margin="0,-12,0,0"/>
 
-                <Label Text="Select Leave Type" FontSize="18"/>
+                <Label Text="Leave Type" FontSize="18"/>
                 <StackLayout>
                     
                     <StackLayout Orientation="Horizontal">
@@ -47,7 +47,7 @@
                     </StackLayout>
                 </StackLayout>
 
-                <Label Text="Select Leave Reason" FontSize="18"/>
+                <Label Text="Leave Reason" FontSize="18"/>
                 <StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <CheckBox x:Name="MedicalEmergencyCheckBox" CheckedChanged="OnLRCheckBoxCheckedChanged" Margin="0,-5,0,0 "/>
@@ -65,21 +65,23 @@
                 </StackLayout>
                 <Frame x:Name="OtherReasonEditor" HasShadow="True" BackgroundColor="LightGray" CornerRadius="10" HeightRequest="120" WidthRequest="200" IsVisible="False">
                     <Editor Placeholder="Explain your reason..." 
-                                Margin="-10,-15,10,-10"
-                                AutoSize="TextChanges"
-                                MaxLength="500"
-                                Keyboard="Text"
-                                TextColor="Black"/>
+                            x:Name="OtherReasonEditor2"    
+                            Margin="-10,-15,10,-10"
+                            AutoSize="TextChanges"
+                            MaxLength="500"
+                            Keyboard="Text"
+                            TextColor="Black"/>
                 </Frame>
-
-                <Button Text="Apply"
-                        Margin="0,30,0,0"
-                        Clicked="OnSubmitClicked" 
-                        HorizontalOptions="Center" 
-                        BackgroundColor="#007AFF" 
-                        TextColor="WhiteSmoke" 
-                        CornerRadius="25"
-                        WidthRequest="120"/>
+                <Image Source="Apply"
+                           HeightRequest="100"
+                           WidthRequest="200"
+                           Margin="0,0,0,0"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSubmitClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
         </StackLayout>
 
